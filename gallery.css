@@ -1,0 +1,140 @@
+/*      font-family: 'Libre Baskerville', serif; 영어픽 */
+/*      font-family: 'Nanum Gothic', sans-serif; 한글 픽!
+        font-family: 'Do Hyeon', sans-serif;
+        font-family: 'Gothic A1', sans-serif;
+        font-family: 'Nanum Myeongjo', serif;
+        제품서브 HY견고딕체 없어서 여러개 가져와봄 골라쓰기
+*/
+
+/*서브공통*/
+.menu-title {
+    text-align: center;
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;
+    width: 100%;
+    height: 75px;
+
+}
+
+.menu-title h3 {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 75px;
+}
+
+/*서브공통 끝*/
+
+header .container .menu .menu-li:nth-child(4) a {
+    color: #c6c6c6;
+}
+
+.bg-section {
+    width: 100%;
+    height: 830px;
+    /*    885*/
+    background-image: url(img/detail_1967_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media (max-width:1300px) {
+    .bg-section {
+        height: 500px;
+    }
+
+    .section2 {
+        padding-bottom: 80px !important;
+        padding-top: 80px !important;
+    }
+}
+
+.section2 {
+    font-family: 'Libre Baskerville', serif;
+    background-color: #ffd7d0;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+}
+
+.section2 .text {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.section2 .text1 {
+    padding-bottom: 60px;
+}
+
+.section2 .text2 {
+    padding-top: 60px;
+}
+
+.section2 .center-line {
+    display: inline-block;
+    width: 2px;
+    height: 80px;
+    background-color: white;
+}
+
+.section3 {
+    font-family: 'Libre Baskerville', serif;
+    color: #757575;
+    /*    border-bottom: 2px solid #c4c4c4;*/
+}
+
+.section3 .container {
+    display: flex;
+    overflow: hidden;
+}
+
+.section3 .container img {
+    width: 50%;
+}
+
+.section3 .container .text-box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3 .container .text-box h1 {
+    font-size: 50px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.section3 .container .text-box .line {
+    display: inline-block;
+    width: 2px;
+    height: 150px;
+    background-color: #bfbfbf;
+    margin: 0 50px;
+}
+
+.section3 .container .text-box .text-cont {}
+
+.section3 .container .text-box .text-cont p {
+    font-size: 10px;
+    line-height: 30px;
+    font-style: italic;
+}
+footer{
+    background-color: #161616;
+    color: white;
+/*    background-color: rgba(229, 229, 229, 0.5);*/
+}
+
+footer .container2{
+/*
+    color: white;
+    background-color: #161616;
+*/
+    background-color:  black;
+}

@@ -1,0 +1,123 @@
+
+.section-title .container-fluid{
+    background-image: url(lush/title8.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-title .title{
+    color: white;
+    font-size: 50px !important;
+    letter-spacing: 15px !important;
+}
+.section-contact{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.section-contact .container{}
+.section-contact .container .row{}
+.section-contact .container .row .item1{
+    display: flex;
+}
+.section-contact .container .row .item1 .box{
+    flex: 1;
+}
+
+@media (max-width:500px){
+    .section-contact{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section-contact .item .box{
+        margin-right: 0 !important;
+        padding: 0 15px;
+    }
+    .section-contact .row2 h2{
+        text-align: center;
+        padding-left: 0px !important;
+        
+    }
+}
+
+.section-contact .container .row h2{
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+.section-contact .container .row .item1 .box p{
+    font-size: 16px;
+}
+.section-contact .container .row .item1 .box span{
+    color: black; padding-right: 5px;
+}
+.section-contact .container .row .item .call-box{
+    margin-right: 30px;
+}
+.section-contact .container .row .item .chat-box{}
+.section-contact .container .row .item .chat-box .text1{ 
+    line-height: 28px;
+}
+.section-contact .email-box{
+    width: 50%;
+    padding-right: 10;
+    padding-left: 50px;
+}
+.email-box h2{
+    margin-bottom: 30px;
+}
+.email-box .row1{
+    display: flex;
+    width: 100%;
+}
+.email-box .row1 input{
+    width: calc(50% - 10px);
+    margin-right: ;
+    padding: 10px 20px;
+    outline: none;
+    margin-bottom: 15px;
+    border: 1px solid #a0a0a0;
+}
+.email-box .right{
+    margin-left: 30px; !important;
+}
+.email-box .big-text{
+    width: 100% !important;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #a0a0a0;
+}
+.email-box button, .chat-box button{
+    border: none;
+    margin-top: 25px;
+    width: 130px;
+    padding: 13px 0;
+    color: white;
+    background: black;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.chat-box button{margin-top: 12px;}
+.section-contact .row2{
+    padding-top: 40px;
+}
+.section-contact .row2 h2{
+    padding-left: 15px;
+}
+.section-contact .row2 .item{}
+.section-contact .row2 .item img{
+    width: 100%;
+}
+.section-contact .row2 .item h3{
+    font-weight: 600;
+    font-size: 23px;
+}
+.section-contact .row2 .item p{}
+
+
+
+
+
+
+
+

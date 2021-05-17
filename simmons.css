@@ -1,0 +1,470 @@
+
+
+/*        section1*/
+.section1{
+    width: 100%;
+    height: 100vh;
+}
+
+.section1 .vod{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.section1 .vod video{
+    min-width: 100%;
+    min-height: 100%;
+    /*    min미니멈은 최소 너비값 최소높이값 cover랑 동일한 효과*/
+    /*    top,left값 반주고 x좌표 y좌표이동해서 중앙에 맞춤*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section1 .btn-group{
+    position: absolute;
+    left: calc(50% - 75px);
+    bottom: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+.section1 .btn-group .circle-btn{
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #848282;
+    color: white;
+    font-size: 12px;
+    background: rgba(17, 17, 17, 0.86);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.section1 .btn-group .circle-btn:hover {
+    color: black; 
+    background: rgba(255, 255, 255, 0.71);
+}
+.section1 .btn1{}
+.section1 .btn-group .btn2{}
+
+/*        공통사항  */
+/*    지금 section마다 공통되는 게 별로없어서 복붙으로 하기*/
+.section{}
+.container{}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    color: white;
+    background-color: #6f4a8e;
+    
+}
+.btn:hover{
+    border: 2px solid #6f4a8e;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0) !important;
+    color:  #6f4a8e !important;
+}
+.btn-wh{
+    box-sizing: border-box;
+}
+.btn i{
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+/*    section2  */
+.section2{
+    padding-bottom: 140px;
+    padding-top:140px;
+}
+.section2 .container{
+    max-width: 1300px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+/*	border: 1px solid red;*/
+}
+
+.section2 .container .title{
+    font-family: 'Nanum Gothic', sans-serif;
+    /*            원래 메인디자인 나눔고딕체*/
+    padding-bottom: 60px;
+    text-align: center;
+}
+.section2 .container .title h1{
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.section2 .container .title p{
+    font-size: 23px;
+    color: #6f4a8e;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+}
+.section2 .container .title p i{
+    left: 0;
+    top:2px;
+    padding-left:8px;
+    font-weight: 500;
+}
+.section2 .container .title .wrap{
+    width: 220px;
+    height: 2px;
+    position: absolute;
+    left: calc(50% - 130px);
+}
+.section2 .container .title .wrap .line{
+    display: block;
+    width: 0px;
+    height: 3px;
+    margin: 0 auto;
+    background: #6f4a8e;
+    transition: 0.5s;
+    left: -20px;
+}
+
+.section2 .container .title p:hover ~ .wrap .line{width: 280px;} 
+
+.section2 .container .mat-wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.section2 .container .item-group1{
+    display: flex;
+    height: 530px;
+    overflow: hidden;
+    width: 100%;
+}
+.section2 .container .item-group1 .item{
+    width: 300px;
+    position: absolute;        
+    border-radius: 30px;
+    height: 530px;
+    transition: left 0.3s;
+}
+
+
+.section2 .mat-wrap .item:nth-child(1){left: -300px;opacity: 0.1;}
+.section2 .mat-wrap .item:nth-child(2){left: -300px;opacity: 0.1;}
+.section2 .mat-wrap .item:nth-child(3){left: -300px;opacity: 0.1;}
+.section2 .mat-wrap .item:nth-child(4){left: -300px;}
+/*        액티브 될 부분*/
+.section2 .mat-wrap .item:nth-child(5){left: 20px;}
+.section2 .mat-wrap .item:nth-child(6){left: 340px;}   
+.section2 .mat-wrap .item:nth-child(7){left: 660px;}
+.section2 .mat-wrap .item:nth-child(8){left: 980px;}
+/*        액티브 끝*/
+.section2 .mat-wrap .item:nth-child(9){left: 1300px;}
+.section2 .mat-wrap .item:nth-child(10){left: 1300px; opacity: 0.1;}
+.section2 .mat-wrap .item:nth-child(11){left: 1300px;opacity: 0.1;}
+.section2 .mat-wrap .item:nth-child(12){left: 1300px;opacity: 0.1;}
+
+.section2 .container .item-group1 .item>div{
+    padding-left: 20px;
+}
+.section2 .container .item-group1 .item .wrap{
+    border-radius: 30px;
+    width: 100%;
+    padding-left: 0px;
+    overflow: hidden;
+}
+.section2 .container .item-group1 .item img{
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+}
+.section2 .container .item-group1 .item .item-title{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+.section2 .container .item-group1 .item .price{
+    font-weight: 500;
+    font-family: 'Do Hyeon', sans-serif;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+.section2 .container .item-group1 .item .detail-box{
+/*    font-family: 'Nanum Gothic', sans-serif;*/
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 13px;
+    color: #6c6c6c;
+}
+.section2 .container .item-group1 .item .detail-box .detail{
+    padding-bottom: 10px;
+}
+.section2 .container .item-group1 .item .detail-box .detail2{}
+.section2 .container .item-group1 .item .btn-box{
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-top: 20px;
+}
+.section2 .container .item-group1 .item .btn-box .btn{
+    width: 100px;
+    height: 35px;
+}
+.section2 .container .item-group1 .item .btn-box .btn1{
+    background: #6f4a8e;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.section2 .container .item-group1 .item .btn-box .btn2{
+    background: white;
+    color: #6f4a8e;
+    font-size: 13px;
+}
+.section2 .arrow{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top:50%;
+    left: 0;
+}
+.section2 .arrow img{
+    cursor: pointer;
+    height: 56px;
+    z-index: 100;
+}
+.section2 .arrow .left{
+    position: absolute;
+    left: 6%;
+    top: -26px;
+}
+.section2 .arrow .right{
+    position: absolute;
+    right: 6%;
+    top:-26px;
+}
+@media (max-width:1600px){
+    .section2 .arrow .left{left: 3% !important;}
+    .section2 .arrow .right{right: 3% !important;}
+}
+
+/*        section3*/
+.section3{
+    width: 100%;
+    overflow: hidden;
+}
+.section3 .container{
+    width: 100%;
+}
+.section3 .container img{
+    width: 100%;
+    display: block;
+}
+.section3 .container .btn{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    background: #6f4a8e;
+    top:calc(50% + 10px);
+    left: calc(50% - 60px);
+    font-size: 13px;
+    color: white;
+}
+.section3 .container .btn i{
+    top:0.5px;
+}
+
+/*        section4*/
+.section4{
+    background: #eaeaea;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.section4 .container{   
+    max-width: 1800px;
+    width:calc(100% - 60px);
+    margin: 0 auto;
+    background: white;
+    /*            border: 1px solid gold;*/
+}
+.section4 .container .title-box{
+    padding-bottom: 30px;
+    padding-top: 55px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section4 .container .title-box .title{
+    font-weight:700;
+    font-size: 40px;
+}
+.section4 .container .title-box .btn{
+    background: #6f4a8e;
+    color: white;
+    width: 115px;
+    height: 40px;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.section4 .container .title-box .btn i{}
+.section4 .container .item-box{
+    max-width: 1750px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: ;
+    /*            border: 1px solid red;*/
+}
+.section4 .container .item-box .item{
+    flex: 1;
+    margin-right: 30px;
+    border-radius: 30px;
+    overflow:hidden; 
+}
+.section4 .container .item-box .item2{margin-right: 0;}
+
+.section4 .container .item-box .item img{
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.3s;
+}
+.section4 .container .item-box .item:hover >img{
+    transform: scale(1.1);
+}
+
+.section4 .container .item-box .item .text-box{
+    position: absolute;
+    width: 140px;
+    /*            border: 1px solid gold;*/
+    font-weight: 800;
+    font-size:15px;
+    letter-spacing: 1px;
+
+}
+.section4 .container .item-box .item1 .text-box{
+    top:calc(100% - 60px);
+    left: calc(50% - 70px);
+}
+.section4 .container .item-box .item2 .text-box{
+    top:30%;
+    left: calc(50% - 125px);
+}
+.section4 .container .item-box .item .text-box .text1{
+    padding-bottom: 2px;
+}
+.section4 .container .item-box .item1 .text-box .text1{
+    color: #561a6f;
+}
+.section4 .container .item-box .item2 .text-box .text1{
+    color: #34797c;
+}
+
+/*section5*/
+.section5{
+    font-family: 'Nanum Gothic', sans-serif;
+    background: #eaeaea;
+    padding-bottom: 100px;
+    padding-top: 0px;
+}
+.section5 .title{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.section5 .container{
+    max-width: 1200px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+}
+.section5 .container .img-group{
+    display: flex;
+    width: 100%;
+}
+.section5 .container .item{
+    width: 25%;
+    margin-right: 20px;
+    position: ;
+}
+.section5 .container .item1{top:80px;}
+.section5 .container .item2{}
+.section5 .container .item3{top:80px;}
+.section5 .container .item4{margin-right: 0;}
+.section5 .container .item img{width: 100%; cursor: pointer;}
+.section5 .container .item .btn{
+    background: #a98b98;
+    color: white;
+    width: 110px;
+    height: 38px;
+    font-size: 13px;
+    position: absolute;
+    bottom: 30px;
+    left:calc(50% - 55px);
+    transition: 0.5s;
+}
+.section5 .container .item .btn:hover{
+    background: rgb(255, 255, 255) !important;
+}
+/*section6*/
+.section6{
+    background: #eaeaea;
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+.section6 .container{
+    max-width: 1200px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: flex;
+}
+.section6 .container .item{
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+.section6 .container .item1{}
+.section6 .container .item img{
+    padding: 30px 0;
+}
+.section6 .container .item h2{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.section6 .container .item p{
+/*    font-family: 'Nanum Myeongjo', serif;
+    */
+/*    font-family: 'Gothic A1', sans-serif;*/
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 18px;
+    font-weight: ;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #808080;
+}
+
+/*footer*/
+footer{
+    background: #161616;
+    color: white;
+}
+footer .container2{
+    background-color: black;
+}

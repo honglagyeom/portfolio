@@ -1,0 +1,434 @@
+header {color: #48494a ;}
+.m-menu{}
+/*        section2*/
+.section2 {
+    margin-top: 13px;
+    background-image: url(sub3.png);
+    width: 100%;
+    height: 150px;
+    background-position: center;
+
+}
+
+.section2 .title {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 280px;
+    top: calc(50% - 25px);
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+/*        section3*/
+.section3 {
+    padding-bottom: 80px;
+    padding-top: 100px;
+}
+
+.section3 .container {
+    padding-top: 20px;
+    display: flex;
+    max-width: 1400px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+}
+.section3 .container img {
+    flex: 55%;
+}
+
+.section3 .container .detail-box {
+    flex: 45%;
+    padding-left: 60px;
+    color: #48494a;
+/*    border: 1px solid gold;*/
+}
+.section3 .container .detail-box h1 {
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 30px;
+    font-size: 35px;
+
+}
+
+.section3 .container .detail-box .price {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.section3 .container .detail-box .detail {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #797777;
+    font-weight: 400;
+}
+
+.section3 .container .detail-box .detail1 {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.section3 .container .detail-box .detail2 {
+    font-size: 18px;
+}
+
+.section3 .container .box-group {
+    margin: 30px 0;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.section3 .container .box-group .box {
+    height: 50px;
+}
+
+.section3 .container .box-group .box1 {
+    width: 75px;
+    border: 2px solid #bcbbbb;
+    display: flex;
+    color: #797777;
+}
+
+.section3 .container .box-group .box1 p {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    top: calc(50% - 10px);
+    left: calc(20%);
+    text-align: center;
+    font-size: 15px;
+}
+
+.section3 .container .box-group .box1 .arrow {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    padding: 3px;
+    margin-right: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.section3 .container .box-group .box2 {
+    width: 160px;
+    border: 2px solid rgba(201, 176, 39, 0.8);
+    margin-left: 30px;
+    color: #797777;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Hind Siliguri', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section3 .container .box-group .box2 p {}
+
+.section3 .container .box-group .box2:hover {
+    border: 2px solid rgba(201, 176, 39, 0.3);
+    color: rgba(201, 176, 39, 0.8);
+    transition: 0.3s;
+}
+
+.section3 .container .box-group .box2:hover p {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.section3 .container .text-group {}
+
+.section3 .container .text-group .text {
+    display: flex;
+    padding-bottom: 20px;
+    color: #797777;
+}
+
+.section3 .container .text-group .text span {
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+.section3 .container .text-group .text p {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 17px;
+    padding-left:5px;
+}
+
+/*        section4*/
+.section4 .container {
+    max-width: 1400px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #48494a;
+    padding-bottom: 100px;
+    padding-top: 40px;
+}
+
+.section4 .container .title-group {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.75);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    }
+
+.section4 .container .title-group .title {
+    margin: 0 30px;
+}
+.section4 .container p {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 16px;
+    letter-spacing:0.5px;
+}
+
+/*        section5*/
+.section5 {
+    padding-bottom: 130px;
+    padding-top: 20px;
+}
+
+.section5 .container {
+    max-width: 1400px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    color: #48494a;
+    text-transform: uppercase;
+}
+
+.section5 .container h1 {
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+}
+
+.section5 .container .contents {
+    max-width: 1550px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section5 .container .contents .item {
+    width: 24%;
+    margin-right: 20px;
+/*    border: 1px solid black;*/
+    cursor: pointer;
+}
+
+.section5 .container .contents .item:last-child {
+    margin-right: 0;
+}
+
+.section5 .container .contents .item .cart-bg{
+    position: absolute;
+    z-index: 100;
+    background: rgb(255, 255, 255);
+    width: calc(100% - 30px);
+    height: calc(100% - 66px);
+    transform: translate(15px,15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.section5 .container .contents .item:hover .cart-bg{
+    opacity: 1;
+}
+
+.section5 .container .contents .item img {
+    width: 100%;
+    display: block;
+    padding-bottom: 5px;
+    /* 부모너비(item너비)의 100% / height는 이미지크기에 맞게 알아서조절됨*/
+}
+.section5 .container .contents .text-box{
+    display: flex;
+    justify-content: space-between;
+}
+.section5 .container .contents h4 {
+    left: 2px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.section5 .container .contents p {
+    right: 2px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #797777;
+    font-size: 17px;
+}
+
+/*footer*/
+.section8 {
+    color: #48494a;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* 반응형 태블릿  */
+@media (max-width:1024px) {
+    .section2 .title{left: 50px;}
+    .section3{  padding-top: 60px;}
+    .section3 .container img {
+        width: 50%;
+        margin-right: 0;
+    }
+    .section3 .container .detail-box {
+        width: 50%;
+        padding-left: 30px;
+    }
+    .section3 .container .detail-box h1 {
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .section3 .container .detail-box .price{
+        font-size: 28px !important;
+        margin-bottom: 0px !important;
+    }
+    .section3 .container .box-group {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .section3 .container .text-group .text{
+        display: none;
+    }
+    .section4 .container{
+        padding-bottom: 60px;
+    }
+    .section4 .container .title-group{
+        width: 800px;
+    }
+    .section5{padding-bottom: 80px;}
+    .section5 .container .contents .item {}
+    .section5 .container .item .text-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .section5 .container .contents p {
+    }
+    .section5 .container .contents h4 {
+    }
+}
+
+@media (max-width:800px){
+    .section2 .title{left: 40px;}
+    .section4 .container .title-group{
+        width: 600px;
+    }
+    .section3{
+        padding-bottom: 50px;
+        padding-top: ;
+    }
+    .section3 .container img {
+        width: 50%;
+        height: 330px;
+        margin-right: 0;
+    }
+    .section3 .container .detail-box {
+        width: 50%;
+    }
+    .section3 .container .detail-box .detail{
+        display: -webkit-box;
+        -webkit-line-clamp:3;
+        -webkit-box-orient:vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .section4 .container{
+        padding-bottom: 30;
+    }
+    .section4 .container .title{
+        margin: 0 10px !important;
+    }
+    .section4 .container p{
+        font-size: 15px;
+    }
+}
+
+/* 반응형 모바일*/
+@media (max-width:600px){
+    .section2{margin-top: 5px !important;}
+    .section2 .title{left: 30px; font-size: 33px;}
+    .section3{
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+    .section3 .container{
+        width:calc(100% - 40px);
+        display: block ;
+    }
+    .section3 .container img{
+        width: 100%;
+        height: auto;
+    }
+    .section3 .container .detail-box{
+        width: 100%;
+        padding-left:0px;
+    }
+    .section3 .container .detail-box .title{}
+    .section3 .container .detail-box .price{
+/*
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+*/
+    }
+    .section3 .container .detail-box p{
+        font-size: 17px !important;
+    }
+    .section3 .container .box-group{}
+    .section4 .container{
+        width:calc(100% - 40px);
+        padding-bottom: 30px;
+    }
+    .section4 .container .title-group{
+        display: block;
+        width: 100%;
+    }
+    .section4 .container .title{
+        padding-bottom: 10px;
+    }
+    .section4 .container .title3{
+        padding-bottom: 0 ;
+    }
+    .section4 p{
+        padding-left: 5px;
+    }
+    .section5 .container{
+        width:calc(100% - 40px);
+    }
+    .section5 .container .contents{
+        display: block;
+    }
+    .section5 .container .contents .item{
+        width: 100%;
+    }
+}

@@ -1,0 +1,193 @@
+/*      font-family: 'Libre Baskerville', serif; 영어픽 */
+/*      font-family: 'Nanum Gothic', sans-serif; 한글 픽!
+        font-family: 'Do Hyeon', sans-serif;
+        font-family: 'Gothic A1', sans-serif;
+        font-family: 'Nanum Myeongjo', serif;
+        제품서브 HY견고딕체 없어서 여러개 가져와봄 골라쓰기
+*/
+
+/*서브공통*/
+.menu-title{
+    text-align: center;
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;
+    width: 100%;
+    height: 75px;
+
+}
+.menu-title h3{
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 75px;
+}
+
+/*서브공통 끝*/
+
+header .container .menu .menu-li:nth-child(2) a{
+    color: #c6c6c6; 
+}
+
+.section1{
+    width: 100%;
+    height: 350px;
+}
+
+@media (max-width:1300px){
+    .section1{
+        height: auto;
+    }
+}
+
+.section1 img{
+    width: 100%;
+    display: block;
+}
+.section2{
+    background-color: #eaeaea;
+    padding-bottom: 110px;
+    padding-top: 120px;
+}
+.section2 .container{
+    max-width: 1300px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: flex;
+    color: #505050;
+}
+.section2 .left-cont{
+    width: 50%;
+    border-right: 3px solid #c4c4c4;
+}
+.section2 .left-cont .title-box{
+    text-align: center;
+}
+.section2 .left-cont .title-box h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 35px;
+    font-weight: 300;
+}
+.section2 .left-cont .title-box h2{
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+.section2 .left-cont .title-box p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+}
+.section2 .left-cont .cont1{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.section2 .left-cont .cont1 h2{
+    font-family: 'Libre Baskerville', serif;
+}
+.section2 .left-cont .cont1 p{
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 30px;
+    font-size: 15px;
+}
+.section2 .left-cont .cont2 .detail-1{
+    padding-top: 50px;
+} 
+.section2 .left-cont .cont2{
+    padding-right: 20px;
+    display: flex;
+/*    height: 500px;*/
+}
+.section2 .left-cont .cont2 .item{
+}
+.section2 .left-cont .cont2 .item1{
+    width: 45%;
+}
+.section2 .left-cont .cont2 .item2{
+    width: 10%;
+    text-align: center;
+}
+.section2 .left-cont .cont2 .item3{
+    width: 45%;
+}
+.section2 .left-cont .cont2 .item1 img{
+    width: 100%;
+}
+.section2 .detail h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+}
+.section2 .detail h3{
+    font-size: 13px;
+    font-weight: 800;
+    padding: 10px 0;
+    line-height: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.section2 .detail p{
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 23px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.section2 .detail-1{
+    text-align: end;
+}
+.section2 .detail-1 h1{}
+.section2 .detail-1 h3{}
+.section2 .detail-1 p{}
+.section2 .detail-2{
+    text-align: flex;
+}
+.section2 .detail-2 h1{}
+.section2 .detail-2 h3{}
+.section2 .detail-2 p{}
+.section2 .right-cont{
+    width: 50%;
+    display: flex;
+/*    height: 790px;*/
+}
+.section2 .right-cont .cont1{
+    padding-left: 20px;
+    width: 45%;
+}
+.section2 .right-cont .cont1 img{
+    width: 100%;
+}
+.section2 .right-cont .cont2{
+    width: 10%;
+    text-align: center;
+}
+.section2 .right-cont .cont3{
+    width: 45%;
+}
+.section2 .right-cont .cont3 img{
+    width: 100%;
+}
+.section2 .right-cont .cont1 .detail-1{
+    padding-top: 50px;
+
+}
+.section2 .right-cont .cont1 .img5{
+    top: 80px;
+}
+.section2 .right-cont .cont1 .bottom{
+    top: 100px;
+    padding-top: 50px !important;
+}
+.section2 .right-cont .detail-2{
+    padding-top: 30px;
+}
+.section2 .right-cont .cont3 .img6{
+    top: 33px;
+}
+
+footer{
+    background: #161616;
+    color: white;
+}
+footer .container2{
+    background-color: black;
+}
+

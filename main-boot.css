@@ -1,0 +1,769 @@
+/*공통사항 뺀 main css */
+h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: gray;
+}
+
+/*섹션메인 슬라이드*/
+.section-main {
+    height: calc(100vh - 150px);
+    max-height: 600px;
+    width: 100%;
+}
+
+.section-main .img-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.section-main .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    cursor: pointer;
+}
+
+
+.section-main .img-box img:nth-child(2) {
+    display: none;
+}
+
+.section-main .img-box img:nth-child(3) {
+    display: none;
+}
+
+
+.section-main .text-box {
+    width: calc(50% - 200px);
+    min-width: 600px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.71);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+.section-main .text-box .text {}
+
+.section-main .text-box .text1 {
+    font-size: 14px;
+    color: #999999;
+    font-weight: 600;
+}
+
+.section-main .text-box .text2 {
+    font-size: 45px;
+    color: #000000;
+    font-weight: 900;
+}
+
+.section-main .text-box .text3 {
+    font-size: 18px;
+    color: #787878;
+}
+
+.section-main .text-box .text4 button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0;
+    width: 180px;
+    height: 35px;
+    outline: none;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.section-main .arrow-box {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 50%;
+}
+
+.section-main .arrow-box .arrow {
+    display: block;
+    width: 30px;
+    height: 90px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    transform: translate(0, -50%);
+    text-align: center;
+    line-height: 90px;
+    cursor: pointer;
+}
+
+.section-main .arrow-box .arrow-left {
+    left: 0
+}
+
+.section-main .arrow-box .arrow-right {
+    right: 0;
+}
+
+.section-main .indicator-box {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section-main .indicator-box .indi {
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: 2px solid rgba(181, 181, 181);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.section-main .indicator-box .indi:first-child {
+    background-color: black;
+}
+
+.section-iconbox {
+    margin-top: 50px;
+    width: 100%;
+    padding: 30px 0;
+
+}
+
+.section-iconbox .container-fluid {
+    width: 100%;
+}
+
+.section-iconbox img {
+    width: 100%;
+}
+
+/*섹션배너*/
+.section-banner {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.section-banner .item {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.section-banner .item:hover {
+    filter: grayscale(2);
+}
+
+.section-banner .text-box {
+    position: absolute;
+    /*    background-color: rgba(255, 255, 255, 0.7);*/
+    width: 40%;
+    height: 50%;
+    top: 30%;
+    left: 30px;
+    /*    transform: translate(-50%,-50%);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-banner .text-box h4 {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 35px;
+    text-shadow: 0 0 5px #797979;
+}
+
+.section-banner .item .text-box p {
+    text-shadow: 0 0 5px #797979;
+    /*    color:#4b4b4b;*/
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.section-banner .item .text-box p::before {
+    content: '';
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+@keyframes line-ani {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/*섹션프로덕트*/
+.section-product {
+    padding: 80px 0;
+}
+
+.section-product .item {
+    cursor: pointer;
+    height: 370px;
+
+}
+
+.section-product .item h5 {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.section-product .item p {
+    height: 25px;
+    line-height: 15px;
+    font-weight: 500;
+}
+
+.section-product .cart-price {
+    position: absolute;
+    overflow: hidden;
+    left: calc(50% - 30%);
+    color: gray;
+}
+
+.section-product .cart-price .get {
+    top: 0;
+    left: calc(-50% - 10px);
+    transition: 0.5s;
+    width: 80px;
+    font-weight: 600;
+}
+
+.section-product .cart-price .price {
+    transition: 0.5s;
+    top: 0;
+    width: 74px;
+    right: calc(50% - 41px);
+    font-weight: 900;
+}
+
+.section-product .item:hover .get {
+    left: 31%;
+}
+
+.section-product .item:hover .price {
+    right: -45%;
+}
+
+.section-product .item .get:hover {
+    color: black;
+}
+
+
+/*섹션어바웃*/
+.section-about .item {
+    height: 440px;
+}
+
+.section-about img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.section-about .wrap {
+    height: 100%;
+    padding: 20px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-about .wrap h1 {}
+
+.section-about .wrap p {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+.section-about .wrap .subtitle {
+    font-size: 18px !important;
+}
+
+.section-about button {
+    width: 200px;
+    margin-top: 20px;
+    height: 40px;
+    outline: none !important;
+    font-weight: 600;
+    color: #464646;
+}
+
+/*섹션아이콘*/
+.section-icon {
+    margin: 100px 0;
+}
+
+.section-icon .container-fluid {
+    max-width: 1300px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+}
+
+.section-icon .item {
+    cursor: pointer;
+}
+
+.section-icon .item img {
+    width: 100px;
+}
+
+.section-icon .item h3 {
+    font-weight: 600;
+}
+
+.section-icon .item p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+
+/*섹션레터*/
+.section-letter {
+    margin: 50px 0;
+}
+
+.section-letter .container-fluid {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+.section-letter .row {}
+
+.section-letter .item {
+    width: 100%;
+    background-image: url(lush/accessory01_144620.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-letter .letter-box {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px 40px;
+}
+
+.section-letter .letter-box h1 {
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Cabin', sans-serif;
+    line-height: 50px;
+    margin-bottom: 0px;
+    margin-top: 10;
+    font-size: 40px;
+}
+
+.section-letter .letter-box p {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.section-letter .letter-box .input-box {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.section-letter .letter-box .input-box input {
+    text-indent: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 40px;
+    float: left;
+    font-size: 13px;
+}
+
+.section-letter .letter-box .input-box .sub-btn {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    background: black;
+    color: white;
+    float: right;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/*섹션블로그*/
+.section-blog {
+    padding: 50px 0 100px;
+}
+
+.section-blog .container {
+    max-width: 1300px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+.section-blog .container .item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.section-blog .container .item .wrap {
+    overflow: hidden;
+}
+
+.section-blog .container .item .wrap img {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.section-blog .container .item:hover img {
+    transform: scale(1.1);
+}
+
+.section-blog .container h1 {
+    padding-bottom: 30px;
+}
+
+.section-blog .container .item h3 {
+    font-weight: 700;
+}
+
+.section-blog .container .item p {
+    font-weight: 700;
+}
+
+.section-blog .container .item .sub-text {
+    color: rgba(0, 0, 0, 0.79) !important;
+    font-size: 16px;
+}
+
+/*미디어쿼리로 정리하기*/
+/*1000*/
+
+@media (max-width:1024px) {
+    .section-main .text-box {
+        width: calc(100% - 200px);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 300px;
+        height: calc(100% - 200px);
+        min-height: 300px;
+        ;
+    }
+
+    .section-main .text-box .text1 {
+        font-size: 14px;
+        color: #6c6c6c;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .section-main .text-box .text2 {
+        font-size: 30px;
+        color: #000000;
+        font-weight: 700;
+    }
+
+    .section-main .text-box .text3 {
+        font-size: 16px;
+        color: #6c6c6c;
+        padding-top: 10px !important;
+        font-weight: 600;
+        line-height: 25px;
+        padding: 0 15px;
+    }
+
+    .section-main .text-box .text4 button {
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        background: black;
+        color: white;
+        border: none;
+        height: 45px;
+        transition: 0.3s;
+    }
+
+    .section-main .text-box .text4 button:hover {
+        background: white;
+        color: black;
+    }
+
+    .section-main .arrow-box {
+        display: none;
+    }
+
+    .section-product .cart-price .get {
+        top: 0;
+        left: calc(-50% - 10px);
+        transition: 0.5s;
+        width: 80px;
+    }
+
+    .section-product .cart-price .price {
+        transition: 0.5s;
+        top: 0;
+        width: 74px;
+        right: calc(50% - 20px);
+
+    }
+
+    .section-product .item:hover .get {
+        left: 17%;
+    }
+
+    .section-product .item:hover .price {
+        right: -45%;
+    }
+}
+
+/*700*/
+@media (max-width:700px) {
+
+    .section-icon .item {
+        padding: 0 30px;
+    }
+
+    .section-about .item {
+        height: 300px;
+    }
+
+    .section-about .wrap h1 {
+        font-size: 30px;
+    }
+
+    .section-about .wrap .subtitle1 {}
+
+    .section-about .wrap .subtitle2 {
+        overflow: hidden;
+        height: 25px;
+        text-overflow: ellipsis;
+    }
+
+    .section-letter .item .input-box {
+        display: block;
+    }
+
+    .section-letter .item .input-box > * {
+        display: block;
+        width: 100% !important;
+    }
+
+    .section-blog .container .row .item {
+        padding-bottom: 20px;
+    }
+
+    .section-blog .container .row .item:last-child {
+        padding-bottom: 0;
+    }
+}
+
+/*500*/
+@media (max-width:500px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+
+    .section-blog .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .section-banner .text-box h4 {
+        font-size: 20px;
+    }
+
+    .section-product .item {
+        height: 300px;
+    }
+
+    .section-icon .item {
+        margin-bottom: 20px;
+    }
+
+    .letter-box p {}
+
+    .letter-box h1 {
+        font-size: 25px;
+    }
+
+    .letter-box {
+        margin: 0 auto !important;
+        width: 100%;
+        padding: 45px 0 !important;
+        height: 350px;
+    }
+
+    .input-box {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+        height: 100px !important;
+    }
+
+    .input-box input {
+        width: 100% !important;
+        height: 40px !important;
+    }
+
+    .input-box .sub-btn {
+        width: 100% !important;
+        height: 40px !important;
+
+    }
+
+    .section-product .cart-price {
+        /*        border: 1px solid gold;*/
+        overflow: hidden;
+        width: 100%;
+        left: 0;
+        color: gray;
+        font-weight: 900;
+
+    }
+
+    .section-product .cart-price .get {
+        top: 0;
+        left: -55%;
+        transition: 0.5s;
+        width: 80px;
+    }
+
+    .section-product .cart-price .price {
+        transition: 0.5s;
+        top: 0;
+        width: 74px;
+        right: 23%;
+
+    }
+
+    .section-product .item:hover .get {
+        left: 18%;
+    }
+
+    .section-product .item:hover .price {
+        right: -45%;
+    }
+}
+
+/*320*/
+@media (max-width:320px) {
+    .section-product .item {
+        height: 260px;
+    }
+
+    .section-product .cart-price {
+        overflow: ;
+        color: gray;
+        width: 100%;
+        font-weight: 900;
+        font-size: 13px;
+
+    }
+
+    .section-product .cart-price .get {
+        top: 0;
+        left: -55%;
+        transition: 0.5s;
+        width: 80px;
+    }
+
+    .section-product .cart-price .price {
+        transition: 0.5s;
+        top: 0;
+        right: 27%;
+
+    }
+
+    .section-product .item:hover .get {
+        left: 20%;
+    }
+
+    .section-product .item:hover .price {
+        right: -45%;
+    }
+}
+
+/*280*/
+@media (max-width:280px) {
+    .section-product .item p {
+        font-size: 12px;
+    }
+
+    .section-product .cart-price {
+        overflow: ;
+        color: gray;
+        width: 100%;
+        font-weight: 900;
+        font-size: 11px;
+
+    }
+
+    .section-product .cart-price .get {
+        top: 0;
+        left: -55%;
+        transition: 0.5s;
+        width: 80px;
+    }
+
+    .section-product .cart-price .price {
+        transition: 0.5s;
+        top: 0;
+        right: 26%;
+
+    }
+
+    .section-product .item:hover .get {
+        left: 20%;
+    }
+
+    .section-product .item:hover .price {
+        right: -45%;
+    }
+}

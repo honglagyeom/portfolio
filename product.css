@@ -1,0 +1,225 @@
+/*      font-family: 'Libre Baskerville', serif; 영어픽 
+        font-family: 'Nanum Gothic', sans-serif; 한글 픽!
+        font-family: 'Do Hyeon', sans-serif;
+        font-family: 'Gothic A1', sans-serif;
+        font-family: 'Nanum Myeongjo', serif;
+        제품서브 HY견고딕체 없어서 여러개 가져와봄 골라쓰기
+*/
+
+/*서브공통*/
+.menu-title{
+    text-align: center;
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;
+    width: 100%;
+    height: 75px;
+    
+}
+.menu-title h3{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 75px;
+}
+
+/*서브공통 끝*/
+
+header .container .menu .menu-li:nth-child(1) a{
+    color: #c6c6c6; 
+}
+
+
+.product-detail{
+    background-color: #161616;
+    padding-bottom: 70px;
+    padding-top: 100px;
+}
+.product-detail .img-container{
+    max-width: 1300px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: flex;
+    height: 530px;
+}
+.product-detail .left-box{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin-right: 30px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-detail .left-box img{
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    height: 187px;
+    cursor: pointer;
+}
+.product-detail .left-box img:last-child{margin-bottom: 0px;}
+.product-detail .right-box{
+    width: 75%;
+    height: 100%;
+}
+.product-detail .right-box img{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+.product-detail .item-content1{
+    padding-bottom: 80px;
+    padding-top: 90px;
+}
+.product-detail .item-content1 .text-cont{
+    text-align: center;
+}
+.product-detail .item-content1 .text-cont .size-box{
+    margin: 0 auto;
+    width: 90px;
+    padding: 10px;
+    font-style: italic;
+    background-color: #6f4a8e;
+    font-size: 12px;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+}
+.product-detail .item-content1 .text-cont h3{
+    padding: 20px 0 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 17px;
+    color: #d8d8d8;
+}
+.product-detail .item-content1 .text-cont h1{
+    color: #d8d8d8;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 32px;
+    padding: 5px 0 10px;
+}
+.product-detail .item-content1 .text-cont .price{
+    color: #d8d8d8;
+    font-size: 27px;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 2px;
+    padding-bottom: 50px;
+}
+.product-detail .item-content1 .text-cont .text{
+    color: white;
+    line-height: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.product-detail .item-content1 .btn-cont{
+    padding-top: 50px;
+    display: flex;
+    margin: 0 auto;
+    width: 540px;
+}
+.product-detail .item-content1 .btn{
+    text-align: center;
+    display: block;
+    width: 250px;
+    background-color: white;
+    padding: 23px 20px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.product-detail .item-content1 .btn:hover{
+    color: white;
+    background-color: #d8d8d8;
+}
+
+.product-detail .item-content2{
+    max-width: 800px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    border-top: 2px solid #c4c4c4;
+}
+.product-detail .item-content2 .line{}
+.product-detail .item-content2 .top-line{}
+.product-detail .item-content2 .text{
+    border-bottom: 1px solid rgba(196, 196, 196, 0.21);
+    display: flex;
+    justify-content: center;
+}
+.product-detail .item-content2 .text h3{
+    color: #d8d8d8;
+    line-height: 80px;
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Gothic A1', sans-serif;
+}
+.product-detail .item-content2 .text p{
+    width: 500px;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    line-height: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.with-container{
+    padding-top: 100px;
+    max-width: 1000px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    color: white;
+    padding-bottom: 50px;
+}
+.with-container h1{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    font-family: 'Gothic A1', sans-serif;
+}
+.with-container .item-group{
+    display: flex;
+}
+.with-container .item-group .item{
+    margin-right: 20px;
+}
+
+.with-container .item-group .item1{}
+.with-container .item-group .item2{}
+.with-container .item-group .item3{
+    margin-right: 0;
+}
+.with-container .item-group .item img{
+    width: 100%;
+    border-radius: 20px;
+}
+.with-container .item-group .item p{
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Nanum Gothic', sans-serif !important;
+}
+
+
+footer{
+      background: white;
+}
+/*
+footer .container1{
+	padding-bottom: 70px;
+	padding-top: 60px;
+}
+*/
+
+footer .container2{
+    background-color:  rgba(229, 229, 229, 0.5);
+}
+
+
+

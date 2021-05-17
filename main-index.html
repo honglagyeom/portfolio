@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>LUSH KOREA</title>
+    <link href="lush/web-icon.png" rel="icon">
+    <link rel="stylesheet" href="common.css"> 
+<!--        공통css를 먼저 연결    -->
+    <link rel="stylesheet" href="main-boot.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--   header공통요소 -->
+    <header>
+        <div class="top1 hidden-xs hidden-sm">
+            <div class="container-fluid">
+                <div class="item item1 col-sm-6">
+                    <span data-icon="&#xe076"></span>
+                    <span>정기구독 신청하기</span>
+                </div>
+                <div class="item item2 col-sm-6">
+                    <span data-icon="&#xe081"></span>
+                    <span>매장 위치</span>
+                    <span data-icon="&#xe00b"></span>
+                    <span>02 331 225</span>
+                </div>
+            </div>
+        </div>
+        <div class="top2">
+            <div class="container-fluid">
+                <div class="item-left col-xs-2">
+                    <div class="wrap">
+                        <img src="lush/logo-so30.png">
+                        <span class="ham-btn" data-icon="&#x61"></span>
+                        <!-- 넓은사이즈logo,작은사이즈햄버거-->
+                    </div>
+                </div>
+                <div class="item-center col-xs-8">
+                    <div class="menu">
+                        <a href="main-index.html"><span class="home">HOME</span></a>
+                        <a href="sub1.html"><span>러쉬 소개</span></a>
+                        <a href="sub4.html"><span>제품</span></a>
+                        <a href="sub2.html"><span>이벤트</span></a>
+                        <a href="sub3.html"><span>고객지원</span></a>
+                        <a href="sub5.html"><span>자주하는 질문</span></a>
+                    </div>
+                    <img src="lush/logo-so30.png">
+                    <!--                넓은사이즈menu,작은사이즈logo-->
+                </div>
+                <div class="item-right col-xs-2">
+                    <span class="icon1" data-icon="&#xe013">
+                        <span class="number">4</span>
+                        <!--    장바구니-->
+                        <div class="header-cart">
+                            <div class="cart-box">
+                                <div class="item item-cart">
+                                    <div class="img-box">
+                                        <img src="lush/item8.jpg">
+                                    </div>
+                                    <div class="text-box">
+                                        <p>
+                                            베수비오
+                                        </p>
+                                        <p>
+                                            2
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                            ￦20,000
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item-cart">
+                                    <div class="img-box">
+                                        <img src="lush/item3.jpg">
+                                    </div>
+                                    <div class="text-box">
+                                        <p>
+
+                                            대디-오
+                                        </p>
+                                        <p>
+                                            1
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                            ￦19,000
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item-cart">
+                                    <div class="img-box">
+                                        <img src="lush/item4.jpg">
+                                    </div>
+                                    <div class="text-box">
+                                        <p>
+
+                                            더티 보디
+                                        </p>
+                                        <p>
+                                            1
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                            ￦50,000
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item item-count">
+                                    <div class="cart-btn">
+                                        CART
+                                        <span class="
+                                                     glyphicon glyphicon-shopping-cart"></span>
+                                    </div>
+                                    <div class="total">￦109,000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="icon2" data-icon="&#x55"></span>
+                    <span class="icon3 ham" data-icon="&#x61"></span>
+                </div>
+            </div>
+        </div>
+        <nav class="m-menu hidden-lg hidden-md">
+            <ul class="m-menu-ul">
+                <li class="m-menu-li"><a href="main-index.html">HOME</a></li>
+                <li class="m-menu-li"><a href="sub1.html">러쉬 소개</a></li>
+                <li class="m-menu-li"><a href="sub4.html">제품</a></li>
+                <li class="m-menu-li"><a href="sub2.html">이벤트</a></li>
+                <li class="m-menu-li"><a href="sub3.html">고객지원</a></li>
+                <li class="m-menu-li"><a href="sub5.html">자주하는 질문</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--    전체모달 팝업으로 서치창 만들기 start  -->
+    <div class="search-popup">
+        <div class="black"></div>
+        <div class="content-box">
+            <div class="wrap">
+                <div class="item item1">
+                    <span class="close-btn"></span>
+                </div>
+                <div class="item item2">
+                    <div class="input-box">
+                        <label for="input1">제품찾기</label>
+                        <input type="text" id="input1" autofocus placeholder="제품명">
+                    </div>
+                </div>
+                <div class="item item3">
+                    <div class="title">키워드로 제품 찾기</div>
+                    <div class="advanced-box">
+                        <span class="ad-item ad-item1"># 베스트샴푸</span>
+                        <span class="ad-item ad-item2"># 로맨틱</span>
+                        <span class="ad-item ad-item3"># 오래머무는잔향</span>
+                        <span class="ad-item ad-item4"># 스테디셀러</span>
+                        <span class="ad-item ad-item5"># 뒤돌아보는향</span>
+                        <span class="ad-item ad-item6"># 재구매각</span>
+                        <span class="ad-item ad-item7"># 환상적인우주느낌</span>
+                        <span class="ad-item ad-item8"># 블루베리의촉촉함</span>
+                        <span class="ad-item ad-item9"># 유명한숯비누</span>
+                        <span class="ad-item ad-item10"># 바로그제품</span>
+                    </div>
+                </div>
+                <div class="item item4 hidden-xs hidden-sm">
+                    <div class="title">추천 제품</div>
+                    <div class="recommended-box">
+                        <div class="re-item re-item1">
+                            <img src="lush/item2.jpg">
+                            <p>섹스 밤</p>
+                        </div>
+                        <div class="re-item re-item2">
+                            <img src="lush/item12.jpg">
+                            <p>레몬 제스트</p>
+                        </div>
+                        <div class="re-item re-item3">
+                            <img src="lush/item5.gif">
+                            <p>트와일라잇</p>
+                        </div>
+                        <div class="re-item re-item4">
+                            <img src="lush/item9.jpg">
+                            <p>워리 몬스터</p>
+                        </div>
+                        <div class="re-item re-item5">
+                            <img src="lush/item1.jpg">
+                            <p>카타스트로피</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--   공통요소부분 끝 -->
+    
+    
+    <section class="section section-main">
+        <div class="img-box">
+            <img src="lush/slide1.png" class="img">
+            <img src="lush/slide5.png" class="img">
+            <img src="lush/slide8.png" class="img">
+        </div>
+
+        <div class="text-box hidden-md hidden-lg">
+            <div class="text text1">달콤한 향기에 군침이 쓱!</div>
+            <div class="text text2">나만 알고 싶은 향기</div>
+            <div class="text text3">나를 찾는 29가지 방법이 여기 있어요<br>러쉬의 베스트 셀러인 '더 컴포터'버블 바와 배쓰 밤도 경험해 보세요!</div>
+            <div class="text text4"><button>자세히 보기</button></div>
+        </div>
+
+        <div class="arrow-box hidden-xs hidden-sm">
+            <span class="arrow arrow-left" data-icon="&#x34;"></span>
+            <span class="arrow arrow-right" data-icon="&#x35;"></span>
+        </div>
+        <div class="indicator-box">
+            <span class="indi"></span>
+            <span class="indi"></span>
+            <span class="indi"></span>
+        </div>
+    </section>
+    
+    <section class="section section-banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="item col-xs-12 col-sm-4">
+                    <img src="lush/clean.jpg" class="img-responsive">
+                    <div class="text-box">
+                        <h4>LUSH<br>CLEANSER</h4>
+                        <p class="p1">자세히보기</p>
+                    </div>
+                </div>
+                <div class="item col-xs-12 col-sm-4">
+                    <img src="lush/hair.jpg" class="img-responsive">
+                    <div class="text-box">
+                        <h4>LUSH<br>HAIRCARE</h4>
+                        <p>자세히보기</p>
+                    </div>
+                </div>
+                <div class="item col-xs-12 col-sm-4">
+                    <img src="lush/skin.jpg" class="img-responsive">
+                    <div class="text-box">
+                        <h4>LUSH<br>SKINCARE</h4>
+                        <p>자세히보기</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-product">
+        <div class="container">
+            <h4 class="text-center">한 주 동안 가장 사랑받은 제품</h4>
+            <h1 class="text-center">주간 베스트셀러</h1>
+            <div class="row">
+                <!-- class명 추가: 기기 화면사이즈에 따라 그리드4칸 3칸 2칸으로 만들기  -->
+                <div class="item col-xs-6 col-sm-4 col-md-3">
+                    <img src="lush/item1.jpg" class="img-responsive">
+                    <h5 class="text-center">카타스트로피</h5>
+                    <p class="text-center">#블루베리의촉촉함#슈퍼푸드블루베리</p>
+                    <div class="text-center cart-price">
+                    <span class="get">장바구니 담기</span>
+                    <span class="price">￦ 25,000</span>
+                    </div>
+                </div>
+                <div class="item col-xs-6 col-sm-4 col-md-3">
+                    <img src="lush/item2.jpg" class="img-responsive">
+                    <h5 class="text-center">섹스 밤</h5>
+                    <p class="text-center">#로맨틱#섹시한밤#일랑일랑꽃</p>
+                    <div class="text-center cart-price">
+                        <span class="get">장바구니 담기</span>
+                        <span class="price">￦ 12,000</span>
+                    </div>
+                </div>
+                <div class="item col-xs-6 col-sm-4 col-md-3">
+                    <img src="lush/item15.jpg" class="img-responsive">
+                    <h5 class="text-center">에너지 버블 보틀</h5>
+                    <p class="text-center">#리유저블버블바#레몬의에너지</p>
+                    <div class="text-center cart-price">
+                        <span class="get">장바구니 담기</span>
+                        <span class="price">￦ 25,000</span>
+                    </div>
+                </div>
+                <div class="item col-xs-6 col-sm-4 col-md-3">
+                    <img src="lush/item4.jpg" class="img-responsive">
+                    <h5 class="text-center">더티보디 스프레이</h5>
+                    <p class="text-center">#스테디셀러#뒤돌아보는향</p>
+                    <div class="text-center cart-price">
+                        <span class="get">장바구니 담기</span>
+                        <span class="price">￦ 50,000</span>
+                    </div>
+                </div>
+                <div class="item col-xs-6 col-sm-4 col-md-3">
+                    <img src="lush/item5.gif" class="img-responsive">
+                    <h5 class="text-center">트와일라잇</h5>
+                    <p class="text-center">#샤워젤리#라벤더의굿나잇인사</p>
+                    <div class="text-center cart-price">
+                        <span class="get">장바구니 담기</span>
+                        <span class="price">￦ 15,000</span>
+                    </div>
+                </div>
+                <div class="item col-xs-6 col-sm-4 col-md-3">
+                    <img src="lush/item16.jpg" class="img-responsive">
+                    <h5 class="text-center">인터갈락틱</h5>
+                    <p class="text-center">#배쓰밤#환상적인우주느낌</p>
+                    <div class="text-center cart-price">
+                        <span class="get">장바구니 담기</span>
+                        <span class="price">￦ 17,000</span>
+                    </div>
+                </div>
+                <div class="item col-xs-6 col-sm-4 col-md-3">
+                    <img src="lush/item7.jpg" class="img-responsive">
+                    <h5 class="text-center">멜로우 드라마 버블 스틱</h5>
+                    <p class="text-center">#버블바#마시멜로우같은</p>
+                    <div class="text-center cart-price">
+                        <span class="get">장바구니 담기</span>
+                        <span class="price">￦ 16,000</span>
+                    </div>
+                </div>
+                <div class="item col-xs-6 col-sm-4 col-md-3">
+                    <img src="lush/item8.jpg" class="img-responsive">
+                    <h5 class="text-center">베수비오</h5>
+                    <p class="text-center">#버블바#폭발하는에너지</p>
+                    <div class="text-center cart-price">
+                        <span class="get">장바구니 담기</span>
+                        <span class="price">￦ 20,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="item col-sm-12 col-md-6">
+                    <img src="lush/body1.png" class="img-responsive">
+                </div>
+                <div class="item col-sm-12 col-md-6">
+                    <div class="wrap">
+                        <p class="text-center subtitle1">지금부터 러쉬 바디제품으로 관리하세요</p>
+                        <h1 class="text-center">핫티 마사지 바</h1>
+                        <p class="text-center subtitle2">카모마일과 라벤더의 은은한 꽃향기!<br> 이 제품은 자연에서 얻은 건강한 원재료를 듬뿍 담아 피부에 놀라운 촉촉함을 선사합니다.<br>카모마일과 라벤더가 당신의 피부를 부드럽게 어루만집니다. 꿈결처럼 부드럽죠?<br>TIP! 이 제품에 듬뿍 담긴 코코아 버터는 공정하게 얻었습니다.
+                        </p>
+                        <button class="btn btn-default">자세히 보기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-icon">
+        <div class="container">
+            <div class="row">
+                <div class="item col-xs-12 col-sm-6 col-md-3">
+                    <img src="lush/32_dz_image.png">
+                    <h3>기프트카드</h3>
+                    <p>러쉬 기프트카드는 온라인과 오프라인 매장에서 구매하여 소중한 분들께 선물하세요.</p>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-md-3">
+                    <img src="lush/33_dz_image.png">
+                    <h3>핸드메이드</h3>
+                    <p>러쉬의 모든 제품은 신선하게 손으로 직접 만듭니다. 신선한 제조일자 사용기한을 확인하세요.</p>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-md-3">
+                    <img src="lush/34_dz_image.png">
+                    <h3>제품 사용팁</h3>
+                    <p>러쉬에서 알려주는 제품 사용 방법을 참고하여 더욱 매끄럽고 싱그러운 하루 만드세요.</p>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-md-3">
+                    <img src="lush/31_dz_image.png">
+                    <h3>SNS이벤트</h3>
+                    <p>포토 리뷰를 남겨 주신 분 중 총 30분께 깜짝 선물을 드립니다. 지금 바로 참여하세요!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-letter">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="item col-xs-12">
+                    <div class="letter-box">
+                        <p>러쉬의 제품과 브랜드 소식을 만나세요</p>
+                        <h1>FRESH<br>LUSH LETTER</h1>
+                        <div class="input-box">
+                            <input type="email" id="email-input"  placeholder="이메일 주소를 입력해 주세요.">
+                            <span class="sub-btn">구독하기</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-blog">
+        <div class="container">
+            <h4 class="text-center">이번달 진행하는 다양한 이벤트에 참여하세요</h4>
+            <h1 class="text-center">이벤트</h1>
+            <div class="row">
+                <div class="item col-xs-12 col-sm-6 col-md-4">
+                    <div class="wrap">
+                        <img src="lush/blog2.png" class="img-responsive">
+                    </div>
+                    <h3>3월 퍼퓸 리뷰 이벤트</h3>
+                    <p class="sub-text">향기를 속삭이는 시간</p>
+                    <p>2021.03.04 00:00 - 2021.03.31 23:59</p>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-md-4">
+                    <div class="wrap">
+                        <img src="lush/blog7.png" class="img-responsive">
+                    </div>
+                    <h3>향기 축제 시작!</h3>
+                    <p class="sub-text">NEW 온라인전용 보디스프레이 5종
+                    </p>
+                    <p>2021.03.04 00:00 - 2021.03.31 23:59</p>
+                </div>
+                <div class="item col-xs-12 col-sm-6 col-md-4">
+                    <div class="wrap">
+                        <img src="lush/blog14.png" class="img-responsive">
+                    </div>
+                    <h3>NEW 핸드케어 키트 론칭</h3>
+                    <p class="sub-text">손끝까지 전해지는 촉촉함
+                    </p>
+                    <p>2021.03.04 00:00 - 2021.03.31 23:59</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!--   footer공통요소 -->
+    <footer>
+        <div class="footer footer1">
+            <div class="container hidden-xs">
+                <div class="row">
+                    <div class="item col-sm-3">
+                        <img src="lush/logo_footer.png">
+                        
+                        <div class="icon-group">
+                            <span data-icon="&#xe093"></span>
+                            <span data-icon="&#xe094"></span>
+                            <span data-icon="&#xe09a"></span>
+                            <span data-icon="&#xe095"></span>
+                        </div>
+                    </div>
+                    <div class="item col-sm-3">
+                        <h5>지난 이벤트</h5>
+                        <h5>진행중인 이벤트</h5>
+                        <h5>포토리뷰</h5>
+                        <h5>일반리뷰</h5>
+                        <h5>이달의 기획전</h5>
+                    </div>
+                    <div class="item col-sm-3">
+                        <h5>공지사항</h5>
+                        <h5>이용안내</h5>
+                        <h5>상담문의</h5>
+                        <h5>1:1상담</h5>
+                        <h5>고객센터</h5>
+                    </div>
+                    <div class="item col-sm-3">
+                        <h5>기능별 제품</h5>
+                        <h5>테마별 제품</h5>
+                        <h5>기프트 카드</h5>
+                        <h5>배송문의</h5>
+                        <h5>사전예약</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer footer2">
+            <div class="container">
+                <div class="row">
+                    <div class="item item1 col-xs-6">
+                        CopyrightⓒLUSHKOREA
+                    </div>
+                    <div class="item item2 col-xs-6 text-right">
+                        All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="top-btn hidden-xs hidden-sm"><span data-icon="&#x3a"></span></div>
+
+
+    <!--   공통요소부분 끝 -->
+</body></html>
+<!--제이쿼리 연결-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js">
+</script>
+<!-- 부트스트랩 자바스크립트 연결-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="jquery.nicescroll.js"></script>
+<script src="common.js"></script>
+<script>
+    var num=0 ;    
+    slide()
+    var timer= setInterval(slide_timer,3000)
+    $("body").niceScroll();
+    
+    $(".arrow-left").click(function(){
+        clearInterval(timer)
+        num--;
+        num=num%3;
+        slide()
+        timer= setInterval(slide_timer,3000)
+    })
+    $(".arrow-right").click(function(){
+        clearInterval(timer)
+        num++;
+        num=num%3;
+        slide()
+        timer= setInterval(slide_timer,3000)
+    })
+    $(".indi").click(function(){
+        clearInterval(timer)
+        num=$(this).index();
+        slide()
+        timer= setInterval(slide_timer,3000)
+    })
+    
+    function slide(){
+        active = $(".img").eq(num)
+        active_btn = $(".indi").eq(num)
+        active.stop().fadeIn();
+        $(".img").not(active).stop().fadeOut()
+        active_btn.css({background:"rgba(181, 181, 181)"})
+        $(".indi").not(active_btn).css({background:"rgba(0, 0, 0, 0)"})
+        
+    }
+    
+    function slide_timer(){
+        num++;
+        num=num%3;
+        slide()
+    }
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</script>
